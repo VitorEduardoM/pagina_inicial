@@ -72,7 +72,6 @@ button{
 }
 
 .secao{
-    margin-top: 5%;
     display: flex;
     width: 100%;
     border: solid 2px rgb(0, 0, 0);
@@ -92,35 +91,20 @@ button{
     
 }
 
-.titulo_sec{
-    top: 70px;
-    display: flex;
-    position: relative;
-    right: 44%;
-    font-size: 150%;
-    color: rgb(255, 255, 255) ;
-}
-.titulo_sec2{
-    top: 70px;
-    display: flex;
-    position: relative;
-    right: 47%;
-    font-size: 150%;
-    color: rgb(255, 255, 255) ;
-}
 
 /*---------------------------------------------------------------*/
 /*cards main */
 .container{
     display: flex;
-    padding: 50px;
+    padding: 3rem;
     margin: 0;
-    justify-content: center;
     flex-wrap: wrap;
-    
-    margin-top: 30px;
-    
 }
+.container h2{
+    color: white;
+    margin-top: 5rem;
+}
+
 .card{
     align-items: center;
     justify-content: space-between;
@@ -279,22 +263,6 @@ footer {
         display: flex;
     }
 
-    .titulo_sec{
-        top: 5%;
-        display: flex;
-        position: relative;
-        font-size: 20%;
-        color: rgb(255, 255, 255) ;
-    }
-
-    .titulo_sec2{
-        top: 10%;
-        display: flex;
-        position: relative;
-        font-size: 20%;
-        color: rgb(255, 255, 255) ;  
-    }
-
     .secao{
         justify-content: center;
         
@@ -359,24 +327,7 @@ footer {
         display: flex;
     }
 
-    .titulo_sec{
-        top: 30px;
-        display: flex;
-        position: relative;
-        right: 38%;
-        font-size: 25px;
-        color: rgb(255, 255, 255) ;
-    }
-
-    .titulo_sec2{
-        top: 25px;
-        display: flex;
-        position: relative;
-        right: 45%;
-        font-size: 25px;
-        color: rgb(255, 255, 255) ;  
-    }
-
+    
     .botao{
         display: none;
     }

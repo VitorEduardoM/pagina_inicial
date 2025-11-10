@@ -1,0 +1,387 @@
+
+*{
+    /*aqui tem um margen 0 para zerar todas as margens do site*/
+    margin: 0;
+
+    /*aqui nos temos um padding 0 para poder zerar a aréa entre o conteudo do site e a borada dos elementos*/
+    padding: 0;
+
+    /*temos um box sizing */
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #c0c0c0; 
+}
+
+.container_mae{
+    background-color: #8F1515;
+    display: flex;
+    flex: 1px;
+    flex-wrap: wrap;
+}
+/*---------------------------------------------------------------*/
+/*elementos header*/
+.logo{
+    width: 100px;
+    height: 100px;
+    
+}
+.carrinho_login{
+    width: 45px;
+    height: 45px;
+    margin-top: +25px;  
+}
+
+input{
+    border-radius: 30px;
+    display: flex;  
+    width: 50%;
+    height: 30px;
+    background-color: black;
+    color: white;
+    margin-top: 35px;
+}
+/*-------------------------------------------------------------*/
+/*elementos main*/
+
+/*aqui nos mechemos nas imagems dos cards*/
+
+
+button{
+    border-radius: 30px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    
+}
+/*vai mecher nos textos com os nomes da marca de pneu*/
+.marca{
+    color: black;
+    font-weight: bold;
+    font-size: 80%;
+    font-style: normal;
+}
+
+.secao{
+    margin-top: 5%;
+    display: flex;
+    width: 100%;
+    border: solid 2px rgb(0, 0, 0);
+    gap: 8px;
+    flex-wrap: wrap;
+    
+}
+.botao{
+    width: 30px;
+    height: 40px;
+    background-color: #8F1515;
+    align-items: center;
+    margin-top: 10%;
+    color: white;
+    font-size: 155%;
+    border: none;
+    
+}
+
+.titulo_sec{
+    top: 70px;
+    display: flex;
+    position: relative;
+    right: 44%;
+    font-size: 150%;
+    color: rgb(255, 255, 255) ;
+}
+.titulo_sec2{
+    top: 70px;
+    display: flex;
+    position: relative;
+    right: 47%;
+    font-size: 150%;
+    color: rgb(255, 255, 255) ;
+}
+
+/*---------------------------------------------------------------*/
+/*cards main */
+.container{
+    display: flex;
+    padding: 50px;
+    margin: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    margin-top: 30px;
+    
+}
+.card{
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 10px;
+    width: 200px;
+    height: 285px;
+    margin: 30px;  
+    text-align: center;
+    display: flex;
+    background-color: #ffffff;
+    gap: 10px;
+}
+
+.avaliacao{
+    width: 65px;
+    height: 15px;
+    gap: 10px;
+}
+
+.img_pneu{
+    height: 185px;
+    width: 120px;
+}
+.preco{
+    color: #107C00;
+    font-weight: bold;
+    font-size: 80%;
+    font-style: normal;
+}
+
+#nao_acho{
+    margin-top: 10px;
+    display: none;
+    text-align: center;
+    background-color: #ffffff;
+    height: 20px;
+    border-radius: 5px;
+}
+
+/*-------------------------------------------------------------------*/
+/*mexer no footer*/
+
+/* Variáveis para usar no CSS */
+:root {
+    --cor-primaria: #8F1515;
+    --cor-secundaria: #c0c0c0;
+    --cor-texto: #000000;
+    --cor-texto-claro: #ffffff;
+    --fonte-principal: "Inter", sans-serif;
+    --espacamento: 3rem;
+    --border-radius: 8px;
+    --transicao: all 0.3s ease;
+}
+
+/* Reset e base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: var(--cor-secundaria);
+    padding: 2rem;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto 2rem;
+}
+
+.footer-coluna h3 {
+    color: #ff0000;
+    margin-bottom: 1rem;
+}
+
+.footer-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-info img {
+    width: 20px;
+}
+
+.footer-info a {
+    color: var(--cor-texto);
+    text-decoration: none;
+    transition: var(--transicao);
+}
+
+.footer-info a:hover {
+    color: var(--cor-primaria);
+    text-decoration: underline;
+}
+
+.footer-copyright {
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid #999;
+}  
+
+/*--------------------------------------------------------------------------*/
+
+@media (max-width : 468px) {
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+/*------------------------------------------------------------------------*/
+/*responsividade header*/
+    .head{
+        width: auto;
+        height: auto;
+        justify-content: space-between;
+        padding: 3px;
+    }
+
+    input{
+        border-radius: 30px;
+        display: flex;  
+        width: 55%;
+        height: 75%;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        
+    }
+
+    .carrinho_login{
+        width: 30px;
+        height: 30px;
+    }
+   
+    .logo{
+        width: 20%;
+        height: 25%;
+    }
+
+/*------------------------------------------------------------------------*/
+    
+    .container_mae{
+        flex-direction: column;
+        display: flex;
+        
+
+    }
+    .container{
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+    .titulo_sec{
+        top: 5%;
+        display: flex;
+        position: relative;
+        font-size: 20%;
+        color: rgb(255, 255, 255) ;
+    }
+
+    .titulo_sec2{
+        top: 10%;
+        display: flex;
+        position: relative;
+        font-size: 20%;
+        color: rgb(255, 255, 255) ;  
+    }
+
+    .secao{
+        justify-content: center;
+        
+        
+    }
+
+    .card{
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        border-radius: 20px;
+        padding: 10px;
+        width: 180px;
+        height: 225px;
+        margin: 10px;  
+        text-align: center;
+        display: flex;
+        background-color: #ffffff;
+        gap: 10px;
+    }
+
+    .avaliacao{
+        width: 55px;
+        height: 75px;
+    }
+
+    .marca{
+        font-size: 70%;
+    }
+    .preco{
+        font-size: 70%;
+    }
+
+    .img_pneu{
+        height: auto;
+        width: 55%;
+    }
+
+    .botao{
+        display: none;
+    }
+
+    .footer-container{
+        grid-template-columns: 1fr;
+    }
+   
+} 
+@media (max-width : 780px ){
+    
+    .secao{
+        justify-content: center;
+    }
+
+    .container_mae{
+        flex-direction: column;
+        display: flex;
+
+    }
+
+     .container{
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+    .titulo_sec{
+        top: 30px;
+        display: flex;
+        position: relative;
+        right: 38%;
+        font-size: 25px;
+        color: rgb(255, 255, 255) ;
+    }
+
+    .titulo_sec2{
+        top: 25px;
+        display: flex;
+        position: relative;
+        right: 45%;
+        font-size: 25px;
+        color: rgb(255, 255, 255) ;  
+    }
+
+    .botao{
+        display: none;
+    }
+
+    .footer-container{
+        grid-template-columns: 1fr;
+    }
+}

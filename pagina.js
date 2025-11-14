@@ -4,13 +4,14 @@ searchInput.addEventListener('input', (event) => {
     const value= formatString(event.target.value);
 
     const items = document.querySelectorAll('.card');
-
+    
     const notresul = document.getElementById('nao_acho');
-
+ 
+    
 
     let hasresult = false;
 //------------------------------------------------------------------------------------------------- 
-
+ 
 //-----------------------------------------------------------------------------------------------------
     items.forEach(card  =>{
 
@@ -42,3 +43,5 @@ function formatString(value){
         //remove todos os caracteres de espaço branco
         .trim();
 }
+
+

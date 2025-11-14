@@ -75,19 +75,10 @@ button{
     display: flex;
     width: 100%;
     border: solid 2px rgb(0, 0, 0);
-    gap: 8px;
+    gap: 30px;
     flex-wrap: wrap;
-    
-}
-.botao{
-    width: 30px;
-    height: 40px;
-    background-color: #8F1515;
-    align-items: center;
-    margin-top: 10%;
-    color: white;
-    font-size: 155%;
-    border: none;
+    margin-top: 10px;
+    border-radius: 16px;
     
 }
 
@@ -99,12 +90,13 @@ button{
     padding: 3rem;
     margin: 0;
     flex-wrap: wrap;
+    min-height: 30rem;
 }
 .container h2{
     color: white;
     margin-top: 5rem;
+    
 }
-
 .card{
     align-items: center;
     justify-content: space-between;
@@ -138,12 +130,12 @@ button{
 }
 
 #nao_acho{
-    margin-top: 10px;
+    margin-top: 10%;
+    font-size: 25px;
     display: none;
     text-align: center;
-    background-color: #ffffff;
-    height: 20px;
-    border-radius: 5px;
+    height: 8%;
+    border-radius: 5%;
 }
 
 /*-------------------------------------------------------------------*/
@@ -162,11 +154,6 @@ button{
 }
 
 /* Reset e base */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 
 footer {
     background-color: var(--cor-secundaria);
